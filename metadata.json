@@ -1,0 +1,6 @@
+{
+  "name": "MINewise - Carbon Intelligence & Decarbonization Platform for Indian Coal Mines",
+  "description": "Enterprise carbon intelligence, emission verification, simulation, and decarbonization platform for Indian coal mines and Ministry of Coal authorities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
