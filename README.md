@@ -1,771 +1,395 @@
-# ⛏️ MineWise — Carbon Intelligence & Decarbonization Platform
+# MineWise ⛏️
 
-> **A unified carbon intelligence and decarbonization platform for Indian coal mines.**
+### Carbon Intelligence & Decarbonization Platform for Indian Coal Mines
 
-**MineWise** helps coal-mine stakeholders measure carbon emissions, understand emission sources, identify anomalies, explore suitable decarbonization strategies, and monitor environmental progress through a single platform.
+**MineWise** is a web platform designed to help coal mines understand their carbon emissions and explore practical ways to reduce them.
 
-🔗 **Live Demo:** [MineWise](https://remix-minewise-carbon-intelligence-decarbonizatio-8865.ai.studio)
+Instead of being just a carbon calculator, MineWise brings **emission tracking, anomaly detection, environmental verification, and decarbonization planning** together in one platform.
+
+🔗 **Live Demo:** https://remix-minewise-carbon-intelligence-decarbonizatio-8865.ai.studio
 
 ---
 
-## 🌱 Overview
+## What is MineWise?
 
-Indian coal mines generate emissions through several interconnected activities such as fuel consumption, electricity usage, transportation, mining operations, and methane release.
+Coal mining involves several sources of emissions, including fuel consumption, electricity usage, transportation, and methane.
 
-Traditional carbon calculators mainly answer:
+The problem is that simply knowing the total emissions is not enough. Mine operators also need to understand **where the emissions are coming from, whether the data can be verified, and what actions can actually reduce them.**
 
-> **"How much carbon are we emitting?"**
-
-MineWise goes further by helping answer:
-
-> **"Where are the emissions coming from, can the information be verified, what should we change, and what could be the impact of those changes?"**
-
-The platform follows a continuous:
+MineWise is built around this idea:
 
 **Measure → Verify → Decide → Simulate → Monitor**
 
-approach.
+The platform helps turn mine data into information that can support better decarbonization decisions.
 
 ---
 
-## 🎯 Problem Statement
+## What can MineWise do?
 
-Indian coal mines lack a unified system for measuring, verifying, understanding, and reducing their carbon footprint across different mine types and operational activities.
+### 📊 Carbon Dashboard
 
-MineWise addresses this by bringing together:
+The dashboard gives an overview of a mine's carbon footprint and operational data.
 
-* Carbon-footprint measurement
-* Scope 1, Scope 2 and relevant Scope 3 analysis
-* Methane-emission awareness
-* Emission anomaly detection
-* Environmental verification
-* Satellite-based monitoring concepts
-* Personalized decarbonization recommendations
-* Impact simulation
-* Mine and regional monitoring
-
----
-
-# 🚀 Key Features
-
-## 1. 🏭 Mine Registration
-
-Mine operators can register their mine and provide relevant operational information.
-
-Supported mine types include:
-
-* Open-cast
-* Underground
-* Mixed
-
-The collected information is used to create a mine-specific carbon and decarbonization profile.
-
----
-
-## 2. 📊 Carbon Footprint Dashboard
-
-MineWise provides a centralized dashboard for understanding emissions.
-
-The dashboard can present:
+It can include:
 
 * Total emissions
-* Scope-wise emissions
+* Scope 1, Scope 2 and relevant Scope 3 emissions
 * Methane emissions
+* Fuel and energy consumption
+* Production data
 * Emission trends
-* Energy consumption
-* Fuel consumption
-* Production information
 * Emission intensity
-* Decarbonization progress
 
-Interactive charts make complex environmental information easier to interpret.
+### 🔍 Emission Anomaly Detection
 
----
+MineWise can look for unusual patterns in operational data.
 
-## 3. 🌍 Scope-Based Emission Analysis
+For example, if fuel consumption increases significantly without a similar increase in production, it can indicate an area that needs investigation.
 
-MineWise organizes emissions into recognized greenhouse-gas accounting categories:
+This helps move beyond simply displaying an emission number.
 
-### Scope 1
+### 🛰️ Environmental Verification
 
-Direct emissions from sources controlled by the mine.
+The platform explores the use of satellite and geospatial data to support environmental monitoring.
 
-### Scope 2
-
-Indirect emissions associated with purchased electricity or energy.
-
-### Scope 3
-
-Relevant indirect value-chain emissions.
-
-### Methane
-
-Special attention to methane emissions associated with mining operations.
-
----
-
-## 4. 🔍 Emission Anomaly Detection
-
-MineWise is designed to identify unusual relationships between operational activity and emissions.
-
-For example:
-
-```text
-Fuel Consumption
-       +
-Production
-       +
-Operational Activity
-       ↓
-Expected Emission Pattern
-       ↓
-Actual Emission Pattern
-       ↓
-Anomaly Detection
-```
-
-An unusual increase in fuel consumption compared with production can be flagged for investigation.
-
-This changes the platform from a simple calculator into an **emission intelligence system**.
-
----
-
-## 5. 🛰️ Environmental & Satellite Verification
-
-MineWise incorporates satellite-based environmental verification.
-
-Potential indicators include:
+Possible indicators include:
 
 * Vegetation changes
 * Land-cover changes
-* Reclamation progress
-* Mine-area environmental conditions
+* Mine reclamation
+* Environmental conditions around mining areas
 
-Technologies and data sources that can support this module include:
+Technologies such as **Sentinel-2 and NDVI** can be used for this type of analysis.
 
-* Sentinel-2
-* NDVI
-* Open geospatial data
-* Indian geospatial resources
+### 🌱 Decarbonization Recommendations
 
-The goal is to provide an additional layer of evidence rather than relying exclusively on manually reported information.
+MineWise can suggest possible strategies based on the characteristics of a mine.
 
----
+Examples include:
 
-## 6. 🌱 Personalized Decarbonization Pathways
-
-Different mines have different operational characteristics.
-
-MineWise therefore aims to recommend strategies based on the mine's specific situation.
-
-Possible pathways include:
-
-* Renewable energy integration
-* Energy-efficiency improvements
+* Renewable energy
+* Energy efficiency
 * Electrification
 * Fleet optimization
 * Methane management
 * Land reclamation
-* Operational optimization
+* Operational improvements
 
-The platform focuses on:
+The idea is to help answer:
 
-**Emission Reduction + Cost + Time + Feasibility**
+**What can we change? How much could it reduce emissions? How much could it cost?**
 
-rather than simply listing generic green technologies.
+### 📈 Monitoring
+
+After choosing a decarbonization strategy, the platform can be used to track changes over time and monitor progress.
 
 ---
 
-## 7. 🧮 Decarbonization Simulation
-
-Before implementing an intervention, MineWise can be used to explore its potential effect.
-
-Conceptually:
+## How it works
 
 ```text
-Current Mine State
-       ↓
-Select Intervention
-       ↓
-Estimate Reduction
-       ↓
-Estimate Cost
-       ↓
-Estimate Implementation Time
-       ↓
-Compare Pathways
-       ↓
-Select Suitable Strategy
+        Mine Data
+            ↓
+      Carbon Analysis
+            ↓
+        Verification
+            ↓
+    Identify Emission Issues
+            ↓
+   Decarbonization Options
+            ↓
+      Impact Simulation
+            ↓
+        Monitoring
 ```
 
-This allows decision-makers to compare different pathways before committing resources.
+This creates a continuous feedback loop instead of treating carbon calculation as a one-time activity.
 
 ---
 
-## 8. 🗺️ Interactive Monitoring
+## User Roles
 
-MineWise uses interactive data visualizations and mapping concepts to support:
+MineWise is designed for different stakeholders involved in mining and environmental monitoring.
 
-* Mine-level monitoring
-* Regional analysis
-* Environmental indicators
-* Emission trends
-* Comparative analysis
-
-This can provide government and organizational stakeholders with a broader view of decarbonization progress.
+| User                  | Purpose                                         |
+| --------------------- | ----------------------------------------------- |
+| Mine / Factory Owner  | View emissions and explore reduction strategies |
+| Citizen               | Access environmental information                |
+| Ministry / Government | Monitor mines and regional progress             |
 
 ---
 
-## 9. 👥 Role-Based Experience
+## Tech Stack
 
-MineWise is designed around multiple stakeholders.
+### Frontend
 
-| Role                      | Main Purpose                          |
-| ------------------------- | ------------------------------------- |
-| 🏭 Mine / Factory Owner   | Measure emissions and plan reductions |
-| 👤 Citizen                | Access environmental information      |
-| 🏛️ Ministry / Government | Monitor mines and regional progress   |
+* React
+* TypeScript
+* Tailwind CSS
+* Recharts
+* Leaflet
+* OpenStreetMap
 
-Role-based access can be implemented using authentication and authorization mechanisms such as **JWT + RBAC**.
+### Backend
+
+* Node.js
+* Express.js
+* REST APIs
+* JWT Authentication
+* Role-Based Access Control
+
+### Database
+
+* PostgreSQL
+
+### Data & Analytics
+
+* Python
+* FastAPI
+* Carbon-emission calculations
+* Anomaly detection
+* Satellite / geospatial analysis
 
 ---
 
-# 🔄 MineWise Framework
+## Project Structure
 
 ```text
-             ┌──────────────┐
-             │   MEASURE    │
-             │              │
-             │ Carbon Data  │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │   VERIFY     │
-             │              │
-             │ Data +       │
-             │ Satellite   │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │    DECIDE    │
-             │              │
-             │ Identify     │
-             │ Priorities   │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │   SIMULATE   │
-             │              │
-             │ Compare      │
-             │ Pathways     │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │   MONITOR    │
-             │              │
-             │ Track        │
-             │ Progress     │
-             └──────┬───────┘
-                    │
-                    └──────→ Continuous Improvement
-```
-
----
-
-# 🏗️ System Architecture
-
-```text
-                         ┌─────────────────────┐
-                         │       MineWise      │
-                         │      Frontend       │
-                         └──────────┬──────────┘
-                                    │
-                                    ↓
-                         ┌─────────────────────┐
-                         │     Backend API     │
-                         │   Node / Express    │
-                         └──────────┬──────────┘
-                                    │
-                   ┌────────────────┼────────────────┐
-                   ↓                ↓                ↓
-             ┌───────────┐    ┌───────────┐    ┌────────────┐
-             │ PostgreSQL│    │ Analytics │    │ External / │
-             │ Database  │    │ & Models  │    │ Geo Data   │
-             └───────────┘    └───────────┘    └────────────┘
-                                    │
-                                    ↓
-                             ┌─────────────┐
-                             │   Insights  │
-                             └─────────────┘
-```
-
----
-
-# 🛠️ Technology Stack
-
-## Frontend
-
-| Technology    | Purpose                   |
-| ------------- | ------------------------- |
-| React         | User interface            |
-| TypeScript    | Type-safe development     |
-| Tailwind CSS  | Styling and responsive UI |
-| Recharts      | Data visualization        |
-| Leaflet       | Interactive maps          |
-| OpenStreetMap | Map data                  |
-
-## Backend
-
-| Technology | Purpose                  |
-| ---------- | ------------------------ |
-| Node.js    | Backend runtime          |
-| Express.js | REST API                 |
-| JWT        | Authentication           |
-| RBAC       | Role-based authorization |
-
-## Database
-
-| Technology | Purpose                       |
-| ---------- | ----------------------------- |
-| PostgreSQL | Mine, emissions and user data |
-
-## Data & Intelligence
-
-| Technology          | Purpose                            |
-| ------------------- | ---------------------------------- |
-| Python              | Data processing and analytics      |
-| FastAPI             | Python-based services              |
-| Anomaly Detection   | Identify unusual emission patterns |
-| Carbon Calculations | Emission estimation                |
-| Satellite Analytics | Environmental verification         |
-
----
-
-# 📁 Project Structure
-
-A recommended full-stack structure for MineWise is:
-
-```text
-minewise/
+MineWise/
 │
 ├── frontend/
-│   ├── public/
 │   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── charts/
-│   │   ├── maps/
-│   │   ├── services/
-│   │   ├── hooks/
-│   │   ├── utils/
-│   │   ├── App.tsx
-│   │   └── main.tsx
-│   │
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── vite.config.ts
+│   ├── public/
+│   └── package.json
 │
 ├── backend/
 │   ├── src/
-│   │   ├── controllers/
-│   │   ├── routes/
-│   │   ├── middleware/
-│   │   ├── models/
-│   │   ├── services/
-│   │   └── app.ts
-│   │
-│   ├── package.json
-│   └── .env.example
+│   └── package.json
 │
 ├── analytics/
 │   ├── carbon/
 │   ├── anomaly_detection/
-│   ├── satellite/
-│   └── requirements.txt
+│   └── satellite/
 │
 ├── docs/
-│   ├── architecture/
 │   └── screenshots/
 │
 ├── .gitignore
-├── README.md
-└── LICENSE
+└── README.md
 ```
 
-> Update this structure to exactly match the folders in your repository before publishing the final README.
+> The structure above should be updated to match the actual folders in the repository.
 
 ---
 
-# ⚙️ Getting Started
+## Getting Started
 
-## Prerequisites
+### Prerequisites
 
-Make sure the following are installed:
+Make sure you have:
 
-* **Node.js 18+**
-* **npm**
-* **PostgreSQL**
-* **Python 3.10+** if the analytics services are enabled
+* Node.js
+* npm
+* PostgreSQL
+* Python 3.10+ (if using the analytics service)
 * Git
 
----
 
-## 1. Clone the Repository
+### Install dependencies
 
-```bash
-git clone https://github.com/<your-username>/minewise.git
-
-cd minewise
-```
-
----
-
-## 2. Install Frontend Dependencies
+For the frontend:
 
 ```bash
 cd frontend
-
 npm install
 ```
 
----
-
-## 3. Configure Frontend Environment Variables
-
-Create:
-
-```text
-frontend/.env
-```
-
-Example:
-
-```env
-VITE_API_URL=http://localhost:5000
-```
-
-Use your actual backend URL when deploying.
-
----
-
-## 4. Start the Frontend
-
-```bash
-npm run dev
-```
-
-The development server will normally be available at:
-
-```text
-http://localhost:5173
-```
-
----
-
-## 5. Install Backend Dependencies
-
-Open another terminal:
+For the backend:
 
 ```bash
 cd backend
-
 npm install
 ```
 
----
 
-## 6. Configure Backend Environment Variables
 
-Create:
-
-```text
-backend/.env
-```
-
-Example:
-
-```env
-PORT=5000
-
-DATABASE_URL=postgresql://username:password@localhost:5432/minewise
-
-JWT_SECRET=your_secret_key
-
-NODE_ENV=development
-```
-
-**Never commit `.env` files or API keys to GitHub.**
-
-Use `.env.example` to document required variables.
-
----
-
-## 7. Start the Backend
-
-```bash
-npm run dev
-```
-
-The API should then be available at:
-
-```text
-http://localhost:5000
-```
-
----
-
-# 🐍 Analytics Service
-
-If the Python analytics service is included:
-
-```bash
-cd analytics
-
-python -m venv venv
-```
-
-### Windows
+Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-### macOS / Linux
-
-```bash
-source venv/bin/activate
-```
-
-Install dependencies:
+Then:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Start the FastAPI service:
-
-```bash
-uvicorn main:app --reload
-```
-
 ---
 
-# 🔐 Environment Variables
+## Environment Variables
 
-Do not upload secrets to GitHub.
+Create a `.env` file according to the requirements of your project.
 
-Example `.env.example`:
+Example:
 
 ```env
-# Backend
 PORT=5000
-NODE_ENV=development
-
-# Database
-DATABASE_URL=
-
-# Authentication
-JWT_SECRET=
-
-# Frontend
-VITE_API_URL=
-
-# Optional external services
-SATELLITE_API_KEY=
+DATABASE_URL=your_database_url
+JWT_SECRET=your_secret
+VITE_API_URL=http://localhost:5000
 ```
 
-Replace the empty values with your local/deployment configuration.
+Do not commit your actual `.env` file or API keys to GitHub.
+
+You can provide a `.env.example` file instead.
 
 ---
 
+MineWise ⛏️
+Carbon Intelligence & Decarbonization Platform for Indian Coal Mines
 
-# 🧪 Development
+MineWise is a web platform designed to help coal mines understand their carbon emissions and explore practical ways to reduce them.
 
-Run the frontend:
+Instead of being just a carbon calculator, MineWise brings emission tracking, anomaly detection, environmental verification, and decarbonization planning together in one platform.
 
-```bash
-npm run dev
-```
+🔗 Live Demo: https://remix-minewise-carbon-intelligence-decarbonizatio-8865.ai.studio
 
-Run the backend:
+What is MineWise?
 
-```bash
-npm run dev
-```
+Coal mining involves several sources of emissions, including fuel consumption, electricity usage, transportation, and methane.
 
-Build the frontend:
+The problem is that simply knowing the total emissions is not enough. Mine operators also need to understand where the emissions are coming from, whether the data can be verified, and what actions can actually reduce them.
 
-```bash
-npm run build
-```
+MineWise is built around this idea:
 
-Preview the production build:
+Measure → Verify → Decide → Simulate → Monitor
 
-```bash
-npm run preview
-```
+The platform helps turn mine data into information that can support better decarbonization decisions.
 
-If tests are configured:
+What can MineWise do?
+📊 Carbon Dashboard
 
-```bash
-npm test
-```
+The dashboard gives an overview of a mine's carbon footprint and operational data.
 
----
+It can include:
 
-# 🚀 Deployment
+Total emissions
+Scope 1, Scope 2 and relevant Scope 3 emissions
+Methane emissions
+Fuel and energy consumption
+Production data
+Emission trends
+Emission intensity
+🔍 Emission Anomaly Detection
 
-The frontend can be deployed using platforms such as:
+MineWise can look for unusual patterns in operational data.
 
-* Vercel
-* Netlify
-* Cloud hosting
+For example, if fuel consumption increases significantly without a similar increase in production, it can indicate an area that needs investigation.
 
-The backend can be deployed using:
+This helps move beyond simply displaying an emission number.
 
-* Render
-* Railway
-* AWS
-* Other Node.js-compatible cloud platforms
+🛰️ Environmental Verification
 
-For production deployment, update:
+The platform explores the use of satellite and geospatial data to support environmental monitoring.
 
-```env
-VITE_API_URL=<production-backend-url>
-```
+Possible indicators include:
 
-and configure the production database and secrets through the hosting provider's environment-variable settings.
+Vegetation changes
+Land-cover changes
+Mine reclamation
+Environmental conditions around mining areas
 
----
+Technologies such as Sentinel-2 and NDVI can be used for this type of analysis.
 
-# 📊 Data & Methodology
+🌱 Decarbonization Recommendations
 
-MineWise is designed around recognized greenhouse-gas accounting concepts and environmental monitoring approaches.
+MineWise can suggest possible strategies based on the characteristics of a mine.
 
-The platform can incorporate:
+Examples include:
 
-* Scope 1 / Scope 2 / Scope 3 classification
-* Methane emissions
-* Emission factors
-* Operational activity data
-* Production data
-* Energy and fuel consumption
-* Satellite-derived environmental indicators
-* NDVI-based vegetation monitoring
+Renewable energy
+Energy efficiency
+Electrification
+Fleet optimization
+Methane management
+Land reclamation
+Operational improvements
 
-All production calculations should be validated against the applicable official methodology and emission-factor sources before being used for regulatory reporting.
+The idea is to help answer:
 
----
+What can we change? How much could it reduce emissions? How much could it cost?
 
-# 💡 What Makes MineWise Different?
+📈 Monitoring
 
-MineWise is designed as an **intelligence and decision-support platform**, rather than only an emissions calculator.
+After choosing a decarbonization strategy, the platform can be used to track changes over time and monitor progress.
 
-### Traditional approach
+How it works
+        Mine Data
+            ↓
+      Carbon Analysis
+            ↓
+        Verification
+            ↓
+    Identify Emission Issues
+            ↓
+   Decarbonization Options
+            ↓
+      Impact Simulation
+            ↓
+        Monitoring
 
-```text
-Input Data
-    ↓
-Carbon Calculator
-    ↓
-Emission Number
-```
+This creates a continuous feedback loop instead of treating carbon calculation as a one-time activity.
 
-### MineWise approach
+User Roles
 
-```text
-Operational Data
-       ↓
-Carbon Measurement
-       ↓
-Verification
-       ↓
-Anomaly Detection
-       ↓
-Emission Hotspots
-       ↓
-Decarbonization Options
-       ↓
-Impact Simulation
-       ↓
-Monitoring
-```
+MineWise is designed for different stakeholders involved in mining and environmental monitoring.
 
-This creates a complete feedback loop for continuous improvement.
-
----
-
-# 🗺️ Roadmap
-
-Future improvements can include:
-
-* [ ] Real-time IoT sensor integration
-* [ ] Automated mine-data ingestion
-* [ ] Advanced methane monitoring
-* [ ] AI-based emission forecasting
-* [ ] Digital twin of mining operations
-* [ ] Predictive maintenance
-* [ ] Advanced satellite analytics
-* [ ] Automated carbon reports
-* [ ] Carbon-credit tracking
-* [ ] Government-data integration
-* [ ] National coal-sector monitoring
-* [ ] Mobile application
-* [ ] Advanced AI decarbonization advisor
-
----
-
-# 🎯 Project Goals
-
-MineWise aims to help stakeholders move from:
-
-> **Measure emissions**
-
-to:
-
-> **Understand → Verify → Reduce → Monitor**
-
-The long-term goal is to support a more **data-driven, transparent, and actionable approach to decarbonization in the Indian coal-mining sector.**
-
----
-
-# 👥 Contributors
-
-Add your team members here:
-
-| Name        | Role                      |
-| ----------- | ------------------------- |
-| Your Name   | Full-Stack / Project Lead |
-| Team Member | Frontend                  |
-| Team Member | Backend                   |
-| Team Member | Data / AI                 |
-
----
-
-# 📄 License
-
-This project is currently developed as a **hackathon / academic prototype**.
-
-Add an appropriate open-source license if you intend to distribute the source code publicly.
-
----
-
-# ⭐ Acknowledgements
-
-MineWise builds upon concepts and methodologies related to:
-
-* Greenhouse Gas accounting
-* Carbon-footprint assessment
-* Environmental monitoring
-* Satellite remote sensing
-* Mine reclamation monitoring
-* Data analytics
-* Decarbonization planning
-
----
-
-## 🌿 MineWise
-
-**Measure. Verify. Decide. Simulate. Monitor.**
-
-> Building a smarter pathway toward sustainable Indian coal mining.
+User	Purpose
+Mine / Factory Owner	View emissions and explore reduction strategies
+Citizen	Access environmental information
+Ministry / Government	Monitor mines and regional progress
+Tech Stack
+Frontend
+React
+TypeScript
+Tailwind CSS
+Recharts
+Leaflet
+OpenStreetMap
+Backend
+Node.js
+Express.js
+REST APIs
+JWT Authentication
+Role-Based Access Control
+Database
+PostgreSQL
+Data & Analytics
+Python
+FastAPI
+Carbon-emission calculations
+Anomaly detection
+Satellite / geospatial analysis
+Project Structure
+MineWise/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── src/
+│   └── package.json
+│
+├── analytics/
+│   ├── carbon/
+│   ├── anomaly_detection/
+│   └── satellite/
+│
+├── docs/
+│   └── screenshots/
+│
+├── .gitignore
+└── README.md
