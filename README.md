@@ -578,59 +578,6 @@ Replace the empty values with your local/deployment configuration.
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots of the actual application inside:
-
-```text
-docs/screenshots/
-```
-
-Recommended screenshots:
-
-### Landing Page
-
-```text
-docs/screenshots/home.png
-```
-
-![MineWise Landing Page](docs/screenshots/home.png)
-
-### Dashboard
-
-```text
-docs/screenshots/dashboard.png
-```
-
-![MineWise Dashboard](docs/screenshots/dashboard.png)
-
-### Carbon Analysis
-
-```text
-docs/screenshots/carbon-analysis.png
-```
-
-![Carbon Analysis](docs/screenshots/carbon-analysis.png)
-
-### Decarbonization Pathways
-
-```text
-docs/screenshots/decarbonization.png
-```
-
-![Decarbonization Pathways](docs/screenshots/decarbonization.png)
-
-### Mine Monitoring
-
-```text
-docs/screenshots/monitoring.png
-```
-
-![Mine Monitoring](docs/screenshots/monitoring.png)
-
-> Replace these image paths with the screenshots you actually add to your repository.
-
----
 
 # 🧪 Development
 
